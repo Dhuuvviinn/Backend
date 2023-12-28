@@ -11,7 +11,13 @@ app.get("/",(req,res)=>{
 app.get("/google",(req,res)=>{
     res.send("DhruvinPatel1700@gmail.com")
   })
-  
+ 
+  app.get("/json",(req,res)=>{
+    res.json({
+      name:"dhruvin",
+      surname:"patel"
+    })
+  })
 
 app.listen(Port,()=>{
     console.log(`Server is Connected at http://localhost:${Port}`)
